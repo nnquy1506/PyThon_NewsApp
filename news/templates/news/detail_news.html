@@ -8,13 +8,13 @@
           <div class="card-body">
             <div class="aboutus-wrapper">
               <h1 class="mt-5">{{detail.title}}</h1>
-              <img
+              {% comment %} <img
                 src="{{detail.picture}}"
                 alt="banner"
                 class="img-fluid d-block mx-auto mb-5"
-              />
+              /> {% endcomment %}
               <p class="font-weight-600 fs-15">
-                {{detail.content}}
+                {{ detail.content | safe }}
               </p>
               
               
